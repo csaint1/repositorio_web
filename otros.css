@@ -9,7 +9,7 @@
     --espacios-contenido:45px;
   }
 
-  body{
+  .text{
     background-image: url(/img/fondo.jpg);
     background-repeat: no-repeat;
     background-position: center;
