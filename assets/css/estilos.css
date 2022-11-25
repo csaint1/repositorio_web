@@ -134,7 +134,7 @@
    
   /* Main */
   .contenedor{
-    margin:auto;
+    margin:100px auto;
     padding: var(--margenes) 0;
     width: 100%;
     max-width: 1000px;
@@ -235,7 +235,8 @@
 section h3{
     width: 600px;
     font-size: var(--titulos1);
-    margin: 100px auto;
+    margin: 10px auto;
+    text-align: center;
 }
 
 .contactos{
@@ -308,7 +309,7 @@ section h3{
 
 .footer-contenedor{
   width: 100%;
-  margin-top: 100px;
+  margin-top: 200px;
   justify-content: center;
 }
 
