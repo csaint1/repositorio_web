@@ -6,10 +6,21 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: sans-serif;
+  margin: 0;
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+
 nav{
   background: #2fcdcd;
   height: 80px;
   width: 100%;
+  position: fixed;
 }
 
 .enlace{
@@ -100,9 +111,45 @@ li a.active, li a:hover{
 }
 
 section{
-  background-image: url("img/fondo.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 130vh;
+  color: black;
+
 }
+
+.container{
+  background-image: url("img/fondo.jpg");
+  background-size: cover;
+  background-position: center center;  
+}
+
+.text{
+  text-align: center;
+  padding: 200px 12px;
+  
+}
+
+.text p{
+  text-align: justify;
+  margin: 0 40px 0 40px;
+}
+
+#equipo{
+  background-color: black;
+  color: #fff;
+  text-align: center;
+}
+
+.card{
+  padding: 100px 0px;
+}
+
+.content-card{
+  background-image: url("img/people1.jpg");
+
+
+}
+
