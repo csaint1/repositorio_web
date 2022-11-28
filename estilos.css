@@ -138,18 +138,43 @@ section{
 }
 
 #equipo{
+
   background-color: black;
+  background: cover;
   color: #fff;
-  text-align: center;
+  
 }
 
-.card{
-  padding: 100px 0px;
-}
-
-.content-card{
+.content-card-1{
+  width: 140px;
+  height:230px;
+  margin: 10px;
   background-image: url("img/people1.jpg");
-
-
+  background-size: cover;
+  background-position: center;
 }
 
+.content-card-2{
+  width: 140px;
+  height: 230px;
+  margin: 10px;
+  background-image: url("img/people2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.content-card-3{
+  width: 140px;
+  height: 230px;
+  margin: 10px;
+  background-image: url("img/people3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.texto-team{
+  width: 50px;
+  text-align: center;
+  padding: 50px 0px;
+
+}
