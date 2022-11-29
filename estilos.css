@@ -113,8 +113,7 @@ header a:hover{
   background-color: gray;
   color: white;
   text-align: center;
-  
-  
+    
 }
 
 #nuestro-equipo .container{
@@ -417,15 +416,18 @@ footer .container{
 
   #nuestro-equipo p{
       display: block;
-      margin-bottom: 30px;
+      margin-bottom: 0px;
+      
   }
 
   #nuestro-equipo h2{
       font-size: 4em;
+      
   }
 
   #nuestro-equipo h3{
-      margin-top: 0;
+      margin-top: 200px;
+      margin-bottom: 0;
   }
 
   #nuestro-equipo .carta{
