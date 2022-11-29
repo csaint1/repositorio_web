@@ -37,7 +37,7 @@ button:hover{
 .color-acento{ color:blueviolet; }
 
 header{
-  background-color: rgb(245,245,245);
+  background-color: rgb(205, 220, 223);
   
 }
 
@@ -234,8 +234,8 @@ header a:hover{
 }
 
 .contact_form{  
-  width: 460px; 
-  height: auto;
+  width: 500px; 
+  height: 1100px;
   margin: 0 auto;
   border-radius: 10px;  
   padding-top: 30px;
