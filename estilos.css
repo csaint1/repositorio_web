@@ -85,13 +85,17 @@ header a:hover{
       rgba(0,0,0,0.5),
       rgba(0,0,0,0.5)
   )
-  ,url("media/hero.jpg");
+  ,url("img/diseño2.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
-#hero h1 h3{
+#hero h1  {
+  color: white;
+}
+
+#hero h3  {
   color: white;
 }
 
@@ -102,13 +106,15 @@ header a:hover{
 #quienes-somos .container{
   text-align: center;
   text-align: justify;
-  padding: 200px 12px;
+  padding: 200px 18px;
 }
 
 #nuestro-equipo{
-  background-color: rgb(30,30,30);
+  background-color: gray;
   color: white;
   text-align: center;
+  
+  
 }
 
 #nuestro-equipo .container{
@@ -118,6 +124,7 @@ header a:hover{
 #nuestro-equipo h2{
   margin-top: 0;
   font-size: 3.2em;
+   
 }
 
 #nuestro-equipo .carta{
@@ -126,65 +133,217 @@ header a:hover{
   padding: 50px 0px;
   margin: 30px;
   border-radius: 15px;
+  
 }
 
 .carta:first-child{
-  background-image: linear-gradient(
-      0deg,
-      rgba(0,0,0,0.5),
-      rgba(0,0,0,0.5)
-  )
-  ,url("img/people1.jpg");
+  background-image: url("img/people1.jpg");
 
 }
 
 .carta:nth-child(2){
-  background-image: linear-gradient(
-      0deg,
-      rgba(0,0,0,0.5),
-      rgba(0,0,0,0.5)
-  )
-  ,url("img/people2.jpg");
+  background-image: url("img/people2.jpg");
 }
 
 .carta:nth-child(3){
-  background-image: linear-gradient(
-      0deg,
-      rgba(0,0,0,0.5),
-      rgba(0,0,0,0.5)
-  )
-  ,url("img/people3.jpg");
+  background-image: url("img/people3.jpg");
 
 }
 
-#caracteristicas .container{
-  text-align: center;
-  padding: 250px 12px;
-}
 
-#caracteristicas li{
-  margin: 16px 0px;
-  font-weight: bold;
-}
+/*footer*/
 
-#final{
+.pie-pagina{
+  width: 100%;
+  background-color: #0a141d;
+}
+.pie-pagina .grupo-1{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap:50px;
+  padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+  width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+  color: #efefef;
+  margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #0d2033;
   text-align: center;
-  background-color: rgb(30,30,30);
+  transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+  color: aqua;
+}
+.pie-pagina .grupo-2{
+  background-color: #0a1a2a;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+.pie-pagina .grupo-2 small{
+  font-size: 15px;
+}
+@media screen and (max-width:800px){
+  .pie-pagina .grupo-1{
+      width: 90%;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap:30px;
+      padding: 35px 0px;
+  }
+}
+
+/*termina footer*/
+
+/*formulario contacto*/
+
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+.contacto{
+  height: 100%; 
+  font-family: 'Noto Sans', sans-serif;
+  background-image: url("img/programacion2.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  
+}
+
+.contact_form{  
+  width: 460px; 
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px;  
+  padding-top: 30px;
+  padding-bottom: 20px;  
+  background-color: rgba(233, 223, 223, 0.692); 
+  padding-left: 30px; 
+  padding: 150px 12px;
+}
+
+input{
+  background-color: #fbfbfb; 
+  width: 408px; 
+  height: 40px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: black; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+textarea{
+  background-color: #fbfbfb; 
+  width: 405px; 
+  height: 150px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: black; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+label{
+  display: block; 
+  float: center;  
+}
+
+button{
+  height: 60px; 
+  padding-left: 5px;
+  padding-right: 5px;   
+  margin-bottom: 10px; 
+  margin-top: 15px;   
+  text-transform: uppercase;
+  background-color: black; 
+  border-color: gray; 
+  border-style: solid; 
+  border-radius: 10px;  
+  width: 420px;   
+  cursor: pointer;
+}
+
+button p{
+  color: #fff; 
+}
+
+span{
+  color: gray; 
+}
+
+.aviso{
+  font-size: 13px;  
+  color: #0e0e0e;  
+}
+
+.formulario h1{
+  font-size: 39px;  
+  text-align: letf; 
+  padding-bottom: 20px; 
+  color: gray;
+}
+
+.formulario h3{
+  font-size: 16px; 
+  padding-bottom: 30px;
+  color: #0e0e0e;   
+}
+
+.formulario p{
+  font-size: 14px; 
   color: white;
-  height: 80vh;
+  
 }
 
-#final h2{
-  font-size: 9vw;
+::-webkit-input-placeholder {
+ color: #a8a8a8;
 }
 
-#final button{
-  font-size: 5vw;
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
 }
+
+.formulario input:focus{
+  outline:0;
+  border: 1px solid #97d848;
+}
+
+.formulario textarea:focus{
+  outline:0;
+  border: 1px solid #97d848;
+}
+
+/*footer*/
 
 footer{
   background-color: rgb(230,230,230);
@@ -251,7 +410,7 @@ footer .container{
       width: 400px; 
   }
 
-  #nuestro-equipo .programas{
+  #nuestro-equipo .equipo{
       display: flex;
       justify-content: center;
   }
@@ -279,56 +438,20 @@ footer .container{
   }
 
   .carta:first-child{
-      background-image: linear-gradient(
-          0deg,
-          rgba(0,0,0,0.5),
-          rgba(0,0,0,0.5)
-      )
-      ,url("img/people1.jpg");
+      background-image: url("img/people1.jpg");
 
   }
 
   .carta:nth-child(2){
-      background-image: linear-gradient(
-          0deg,
-          rgba(0,0,0,0.5),
-          rgba(0,0,0,0.5)
-      )
-      ,url("img/people2.jpg");
+      background-image: url("img/people2.jpg");
   }
 
   .carta:nth-child(3){
-      background-image: linear-gradient(
-          0deg,
-          rgba(0,0,0,0.5),
-          rgba(0,0,0,0.5)
-      )
-      ,url("img/people3.jpg");
+      background-image: url("img/people3.jpg");
 
   }
 
-  #caracteristicas{
-      background-image: url("media/background-2.jpeg");
-      background-repeat: no-repeat;
-      background-size: 500px 400px;
-      background-position: calc(100vw - 500px) 120px;
-  }
-
-  #caracteristicas .container{
-      text-align: initial;
-  }
-
-  #caracteristicas ul{
-      margin-left: 100px;
-  }
-
-  #final h2{
-      font-size: 5em;
-  }
-
-  #final button{
-      font-size: 2em;
-  }
+  
 
   footer .container{
       justify-content: flex-end;
